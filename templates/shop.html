@@ -191,7 +191,7 @@
                     <img class="img-fluid w-100" src="{{ product.image.url }}" alt="" style="height: 200px; object-fit: cover;">
                     <!-- Adjust height and object-fit as needed -->
                     <div class="product-action">
-                        <a class="btn btn-outline-dark btn-square" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href="{% url 'cart' product.id %}"><i class="fa fa-shopping-cart"></i></a>
                         <a class="btn btn-outline-dark btn-square" href="{% url 'favourites' %}"><i class="far fa-heart"></i></a>
                     </div>
                 </div>
